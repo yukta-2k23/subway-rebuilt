@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUBWAY-Eat fresh,Think fresh</title>
+
+  <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+  <link href="./output.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Link font-Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <!-- Link font-Georama -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link rel="stylesheet" href="hover.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Link  Remixicon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/discover.css">
+  <link rel="stylesheet" href="/css/faq.css">
+  <link rel="stylesheet" href="/css/beyondoursubs.css">
+  <link rel="stylesheet" href="/css/locate.css">
+  <link rel="stylesheet" href="/css/meethegrills.css">
+  <!-- <link rel="stylesheet" href="our_story.css"> -->
+  <!-- <link rel="stylesheet" href="journey.css"> -->
+
+  <style>
+    #navbar {
+      filter: drop-shadow(0 0 0.2rem #00000066);
+    }
+
+    @media screen and (max-width: 599px) {
+      #navbar {
+        opacity: 0;
+      }
+    }
+
+
+
+    /* SUB SLIDE */
+    .sub {
+      filter: drop-shadow(-10px -40px 10px #021d0957);
+    }
+
+    #capsicum1 {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #capsicum2 {
+      filter: drop-shadow(-10px 15px 5px #021d0957);
+    }
+
+    #onion1 {
+      filter: drop-shadow(-10px 15px 5px #021d0957);
+    }
+
+    #onion2 {
+      filter: drop-shadow(-1px -10px 5px #021d0957);
+    }
+
+    #onion3 {
+      filter: drop-shadow(1px -10px 5px #021d0957);
+    }
+
+    #onion4 {
+      filter: drop-shadow(-10px 15px 5px #021d0957);
+    }
+
+    #tomato1 {
+      filter: drop-shadow(-10px 15px 5px #021d0957);
+    }
+
+    #tomato2 {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #capsicum {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #tomato {
+      filter: drop-shadow(0px -15px 5px #021d0957);
+    }
+
+    #onion {
+      filter: drop-shadow(-10px 15px 5px #021d0957);
+    }
+
+    #onionring {
+      filter: drop-shadow(-10px 15px 5px #021d0957);
+    }
+
+    /* WRAPS SLIDE */
+    .wraps {
+      filter: drop-shadow(30px 10px 10px #021d0957);
+    }
+
+    #chicken {
+      filter: drop-shadow(-30px 10px 5px #021d0957);
+    }
+
+    #wrapcapsicum {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #wraponion1 {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #wraponion4 {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #tomatoleft {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #tomatoright {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #cabbagetop {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #cabbageright {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #cabbageleft {
+      filter: drop-shadow(1px 10px 5px #021d0957);
+    }
+
+    /* COOKIE SLIDE */
+    .cookies {
+      filter: drop-shadow(30px 10px 10px #021d0957);
+    }
+
+    #cookietop {
+      filter: drop-shadow(10px -30px 5px #021d0957);
+    }
+
+    #cookieright {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #chocochiptopright {
+      filter: drop-shadow(10px -15px 5px #021d0957);
+    }
+
+    #chocochipright {
+      filter: drop-shadow(10px 15px 5px #021d0957);
+    }
+
+    #chocochipbottomleft {
+      filter: drop-shadow(-10px 15px 5px #021d0957);
+    }
+
+    #chocochipleft {
+      filter: drop-shadow(-10px 15px 5px #021d0957);
+    }
+  </style>
+</head>
+
+<body class="bg-[#0B8F2C]">
+  <!-- LOADER -->
+  <div class="loader">
+    <h3 class="lg:text-[2rem] sm:text-[15px] font-black tracking-[0.1rem]"><span class="text-[#FFC800]">SUB</span>WAY:</h3>
+    <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">where</h3>
+    <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">flavors</h3>
+    <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">inspire</h3>
+    <h3 class="lg:text-[1.7rem] sm:text-[10px] lg:font-bold lg:tracking-[-0.1rem]">smiles!</h3>
+  </div>
+  <!-- CURSOR -->
+  <div id="cursor">
+    <div class="circle "></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <nav>
+    <div id="navbar"
+      class="lg:h-[12vh] sm:h-[2vh]  lg:w-3/5 sm:w-[200px] fixed bottom-[0.5%] left-1/2  -translate-x-1/2 -translate-y-1/2 bg-[#FFF0E0] border-[3] border-solid border-[#D9D9D9] lg:rounded-full sm:rounded-full flex items-center justify-between p-[2%]  z-[99]">
+      <div class="menu">
+        <div class="item">
+          <a href="#" class="link">
+            <span
+              class="text-[#0B8F2C] text-2xl font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09]"><i
+                class="ri-menu-line"></i></span>
+          </a>
+          <div class="submenu">
+            <div class="submenu-item">
+              <a href="#" class="submenu-link"> FAQ </a>
+            </div>
+            <div class="submenu-item">
+              <a href="#" class="submenu-link">OUR STORY</a>
+            </div>
+            <div class="submenu-item">
+              <a href="#" class="submenu-link">TALK TO US </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#"
+        class="text-[#0B8F2C] hidden-btn text-base font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09] -ml-10">HOME</a>
+      <a href="#"
+        class="text-[#0B8F2C] hidden-btn text-base font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09]">CRAVING
+        MORE?</a>
+      <a href="#"
+        class="text-[#0B8F2C] hidden-btn text-base font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09]">OUR
+        STORES</a>
+      <button class="btn-cssbuttons">
+        <span>ORDER</span>
+        <ul>
+          <li>
+            <a href="https://www.swiggy.com/">
+              <svg class="h-10 w-10 p-1" fill="#021D09" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                data-name="Layer 1">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M12.878,5.92841a.297.297,0,0,1,.31378.335c.002.09192.00348.18384.0036.27575.00061.59241-.00238,1.18488.00208,1.77723.00329.43353.07947.517.49939.56909a14.83182,14.83182,0,0,0,3.14795-.04578,4.94837,4.94837,0,0,0,1.57287-.37384.50722.50722,0,0,0,.34461-.60242,6.83113,6.83113,0,0,0-5.3432-5.71106,6.60826,6.60826,0,0,0-3.64844.243A6.718,6.718,0,0,0,7.07709,4.147,6.27211,6.27211,0,0,0,5.23022,8.43164,11.18781,11.18781,0,0,0,6.7558,13.9494a1.34216,1.34216,0,0,0,1.32989.74726c.65332-.01569,1.30732-.00354,1.96106-.00354v-.00348q1.04187,0,2.08368.00048c.24927.00055.44654.06012.44458.37226-.00458.72522.00067,1.45044-.00335,2.1756-.00129.22015-.06324.432-.32612.43408-.26391.00207-.32641-.20893-.32971-.42951-.00512-.34716.00019-.69452.00061-1.04174.00049-.45105-.07342-.55677-.52319-.639a7.70231,7.70231,0,0,0-2.348-.0199,2.5959,2.5959,0,0,0-.80054.19476c-.21185.09973-.29608.24506-.19318.46729.10706.23126.20691.46728.3332.68786a43.875,43.875,0,0,0,3.42651,4.95569c.15393.19947.27313.20362.43109.0105.34869-.42639.71491-.83856,1.05994-1.26788a34.22649,34.22649,0,0,0,3.57635-5.25989,14.17129,14.17129,0,0,0,1.49451-3.87146A1.20324,1.20324,0,0,0,17.36145,9.824,6.94268,6.94268,0,0,0,15.691,9.66235c-.909-.00677-1.81812-.00348-2.72717-.00268-.24481.00024-.42688-.07007-.42707-.3573-.00048-1.01117-.00183-2.0224.00184-3.03351C12.53943,6.053,12.64349,5.92041,12.878,5.92841Z">
+                  </path>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.zomato.com/">
+              <svg class="h-10 w-20 p-1" fill="#021D09" viewBox="10 8 14 15" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>zomato</title>
+                  <path
+                    d="M20.386 16.8c0.011-0 0.023-0 0.035-0 0.231 0 0.456 0.026 0.672 0.077l-0.020-0.004-0.016 0.147c-0.068 0.581-0.495 1.046-1.051 1.17l-0.009 0.002c-0.038 0.008-0.082 0.013-0.127 0.013-0.306 0-0.562-0.211-0.632-0.495l-0.001-0.004c-0.004-0.027-0.006-0.059-0.006-0.091 0-0.16 0.056-0.307 0.15-0.423l-0.001 0.001c0.184-0.214 0.448-0.354 0.745-0.375l0.003-0c0.076-0.010 0.166-0.017 0.256-0.017h0.001zM28.754 15.478c0.317 0 0.509 0.285 0.509 0.876 0 0.858-0.345 1.563-0.781 1.563-0.327 0-0.519-0.295-0.519-0.877 0-0.867 0.355-1.562 0.791-1.562zM7.974 15.478c0.319 0 0.51 0.285 0.51 0.876 0 0.858-0.345 1.563-0.782 1.563-0.326 0-0.517-0.295-0.517-0.877 0-0.867 0.354-1.562 0.79-1.562zM1.74 14.319c-0.062 0.487-0.127 0.972-0.219 1.412 0.41-0.010 0.774-0.020 1.763-0.020l-2.262 2.449-0.019 0.878c0.555-0.037 1.246-0.049 2.037-0.049 0.707 0 1.417 0.010 1.871 0.049 0.081-0.572 0.162-0.953 0.262-1.421-0.344 0.019-0.943 0.029-1.889 0.029l2.262-2.461 0.029-0.867c-0.546 0.029-1.037 0.037-1.899 0.037-0.936 0-1.218-0.009-1.936-0.037zM8.146 14.206c-1.454 0.078-2.603 1.276-2.603 2.743 0 0.052 0.001 0.103 0.004 0.154l-0-0.007c-0.006 0.055-0.009 0.118-0.009 0.182 0 1.054 0.854 1.908 1.908 1.908 0.039 0 0.077-0.001 0.115-0.003l-0.005 0c1.454-0.075 2.604-1.273 2.604-2.738 0-0.056-0.002-0.112-0.005-0.167l0 0.008c0.006-0.056 0.009-0.12 0.009-0.186 0-1.047-0.849-1.896-1.896-1.896-0.043 0-0.085 0.001-0.127 0.004l0.006-0zM14.244 14.196c-0.875 0.145-1.584 0.736-1.894 1.528l-0.006 0.017c0.059-0.288 0.093-0.618 0.093-0.957 0-0.19-0.011-0.378-0.032-0.563l0.002 0.023c-0.475 0.084-1.030 0.139-1.595 0.152l-0.013 0c0.003 0.081 0.004 0.177 0.004 0.273 0 0.452-0.035 0.895-0.102 1.328l0.006-0.048-0.209 1.431c-0.082 0.562-0.172 1.211-0.264 1.621h1.691c0.009-0.249 0.072-0.639 0.117-0.982l0.145-0.982c0.119-0.639 0.627-1.392 1.018-1.392 0.227 0 0.219 0.22 0.155 0.63l-0.164 1.106c-0.082 0.562-0.172 1.211-0.264 1.621h1.708c0.010-0.249 0.064-0.64 0.11-0.982l0.145-0.982c0.117-0.64 0.627-1.392 1.017-1.392 0.227 0 0.219 0.21 0.182 0.495l-0.409 2.862h1.56l0.547-3.26c0.119-0.811 0.055-1.545-0.845-1.545-0.85 0.137-1.542 0.701-1.856 1.461l-0.006 0.016c0.109-0.762 0.045-1.477-0.846-1.477zM28.961 14.144c-1.473 0.079-2.637 1.292-2.637 2.777 0 0.053 0.001 0.105 0.004 0.157l-0-0.007c-0.006 0.056-0.009 0.121-0.009 0.186 0 1.067 0.865 1.933 1.933 1.933 0.039 0 0.078-0.001 0.116-0.003l-0.005 0c1.473-0.077 2.638-1.29 2.638-2.775 0-0.057-0.002-0.113-0.005-0.169l0 0.008c0.006-0.056 0.009-0.122 0.009-0.188 0-1.061-0.86-1.921-1.921-1.921-0.043 0-0.086 0.001-0.128 0.004l0.006-0zM20.794 14.066c-0.162 0.003-0.318 0.015-0.472 0.035l0.021-0.002c-0.628 0.072-1.197 0.264-1.706 0.551l0.022-0.012 0.325 0.986c0.353-0.2 0.765-0.344 1.204-0.405l0.018-0.002c0.672-0.082 0.946 0.125 0.987 0.469 0.005 0.046 0.008 0.1 0.008 0.155 0 0.073-0.005 0.144-0.015 0.214l0.001-0.008-0.017 0.070c-0.248-0.051-0.533-0.080-0.826-0.080-0.192 0-0.382 0.013-0.567 0.037l0.022-0.002c-0.602 0.046-1.131 0.326-1.502 0.747l-0.002 0.002c-0.196 0.268-0.313 0.605-0.313 0.969 0 0.114 0.012 0.226 0.034 0.334l-0.002-0.011c0.101 0.568 0.59 0.993 1.179 0.993 0.113 0 0.223-0.016 0.327-0.045l-0.008 0.002c0.557-0.061 1.035-0.355 1.341-0.782l0.004-0.006c-0.006 0.14-0.019 0.271-0.040 0.399l0.003-0.019c-0.022 0.138-0.054 0.26-0.095 0.378l0.005-0.015 1.555 0.001q-0.012-0.228-0.001-0.456 0.068-0.86 0.309-2.563c0.014-0.108 0.022-0.232 0.022-0.359 0-0.134-0.009-0.265-0.026-0.394l0.002 0.015c-0.1-0.805-0.785-1.211-1.794-1.197zM25.516 12.813l-1.572 0.591-0.209 0.887-0.557 0.026-0.144 1.222h0.51l-0.264 1.887c-0.164 1.173 0.045 1.726 1.081 1.726 0.521-0.009 1.008-0.145 1.434-0.379l-0.016 0.008 0.181-1.125c-0.224 0.122-0.485 0.207-0.763 0.237l-0.009 0.001c-0.309 0-0.345-0.162-0.281-0.61l0.236-1.745h1.053c0.038-0.257 0.164-1.096 0.2-1.25h-1.081z">
+                  </path>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </button>
+    </div>
+  </nav>
+  <section id="section1" class="swiper mySwiper h-screen ">
+    <div class="swiper-wrapper">
+      <!-- SUB slide -->
+      <div class="item swiper-slide h-screen w-screen bg-[#0B8F2C] relative overflow-x-hidden overflow-y-hidden"
+        id="page1">
+        <div class="mobile-nav">
+          <img class="logo-mobile" id="subwaylogo-mobile" src="/images/subwaylogo1.png" alt="subway logo" />
+          <div class="menu">
+            <div class="item">
+              <a href="#" class="link">
+                <span
+                  class="text-[#fff] text-2xl font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09]"><i
+                    class="ri-menu-line"></i></span>
+              </a>
+              <div class="submenu">
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link"> FAQ </a>
+                </div>
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link">OUR STORY</a>
+                </div>
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link">TALK TO US </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subtext">
+          <img class="logo" id="subwaylogo" src="/images/subwaylogo1.png" alt="subway logo" />
+          <h1>FRESHNESS SERVED DAILY</h1>
+          <h2>Craft your perfect sub from 3750+ options!</h2>
+          <img class="sub h-full w-[70%] rotate-[90deg] absolute left-[22%] top-[45%] z-[99]" src="/images/sub.png"
+            alt="sub sandwich" />
+          <img class="sub-img-mobile" src="/images/sub-img-mobile.png" alt="">
+        </div>
+        <div class="veggies">
+          <img id="capsicum1" class="object absolute h-1/5 w-[10%] bottom-[10%] -right-[1%] rotate-90"
+            src="/images/capsicum1.png" data-value="-3" alt="capsicum1" />
+          <img id="capsicum2" class="object absolute h-[30%] w-[8%] -top-[8%] right-[5%] -rotate-[120 deg]"
+            src="/images/capsicum2.png" data-value="-2" alt="capsicum2" />
+          <img id="onion1" class="object absolute h-1/5 w-[10%] top-[30%] right-0 -rotate-[30 deg]"
+            src="/images/onion1.png" data-value="-2" alt="onion1" />
+          <img id="onion2" class="object absolute h-1/4 w-[12%] -top-[3%] -left-[3%] rotate-[160 deg]"
+            src="/images/onion2.png" data-value="3" alt="onion2" />
+          <img id="onion3" class="object absolute h-[30%] w-[15%] -top-[15%] left-[15%]" src="/images/onion3.png"
+            data-value="2" alt="onion3" />
+          <img id="onion4" class="object absolute h-2/5 w-[20%] -bottom-[12%] right-[10%]" src="/images/onion4.png"
+            data-value="-4" alt="onion4" />
+          <img id="tomato1" class="object absolute h-1/5 w-[35%] top-[30%] -left-[5%] rotate-[25 deg]"
+            src="/images/tomato1.png" data-value="2" alt="tomato1" />
+          <img id="tomato2" class="object absolute h-1/4 w-[12%] top-1/2 right-[10%]" src="/images/tomato2.png"
+            data-value="-5" alt="tomato2" />
+          <img id="capsicum" class="object absolute w-[7%] -bottom-[12%] left-0 rotate-90" src="/images/capsicum2.png"
+            data-value="3" alt="capsicum1" />
+          <img id="tomato" class="object absolute h-[35%] w-[15%] bottom-[20%] -left-[5%] rotate-45"
+            src="/images/tomato2.png" data-value="4" alt="tomato2" />
+          <img id="onion" class="object absolute h-2/5 w-1/5 bottom-[12%] left-[10%] rotate-[15 deg]"
+            src="/images/onion4.png" data-value="5" alt="onion4" />
+          <img id="onionring" class="object absolute h-[30%] w-[15%] bottom-[20%] left-[15%] rotate-[45 deg]"
+            src="/images/onion4.png" data-value="3" alt="onion4" />
+        </div>
+        <div id="arrows">
+          <img class="absolute h-[10%] w-[10%] top-[55%] right-[33%] arrowtopright" src="/images/arrow1.svg"
+            alt="arrow" />
+          <img class="absolute h-[8%] w-[8%] bottom-[17%] left-[36%] arrowbottomleft" src="/images/arrow3.svg"
+            alt="arrow" />
+          <img class="absolute h-[18%] w-1/5 bottom-[14%] right-[28%] arrowbottomright" src="/images/arrow4.svg"
+            alt="arrow" />
+          <img class="absolute h-[18%] w-1/5 top-1/2 left-[30%] arrowtopleft" src="/images/arrow2.svg" alt="arrow" />
+        </div>
+        <img class="absolute h-[5%] w-[10%] top-[55%] left-[28%] handcrafted" src="/images/Handcrafted.svg"
+          alt="handcrafted" />
+        <img class="absolute h-[4%] w-[9%] top-[55%] right-[25%] farmfresh" src="/images/Farm-fresh.svg"
+          alt="farmfresh" />
+        <img class="absolute h-[8%] w-[12%] top-[70%] left-[27%] nourishing" src="/images/Nourishing.svg"
+          alt="nourishing" />
+        <img class="absolute h-[7%] w-[9%] top-[74%] right-[25%] nutritious" src="/images/Nutritious.svg"
+          alt="nutritious" />
+      </div>
+      <!-- wrap slide -->
+      <div class="item swiper-slide h-screen w-screen bg-[#E47B0F] relative overflow-x-hidden overflow-y-hidden"
+        id="page2">
+        <div class="mobile-nav">
+          <img class="logo-mobile" id="subwaylogo-mobile" src="/images/subwaylogo1.png" alt="subway logo" />
+          <div class="menu">
+            <div class="item">
+              <a href="#" class="link">
+                <span
+                  class="text-[#fff] text-2xl font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09]"><i
+                    class="ri-menu-line"></i></span>
+              </a>
+              <div class="submenu">
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link"> FAQ </a>
+                </div>
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link">OUR STORY</a>
+                </div>
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link">TALK TO US </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subtext">
+          <img class="logo" src="/images/subwaylogo1.png" alt="subway logo" />
+          <h1>FRESHNESS SERVED DAILY</h1>
+          <h2>Nutritious ,flavourful ,veggie-packed delight!</h2>
+          <img class="wraps  w-1/2 absolute left-[27%] top-[20%] z-[99]" src="/images/wraps.png" src="/images/wraps.png"
+            alt="wraps" />
+          <img class="wrap-img-mobile" src="/images/wrap-img-mobile.png" alt="">
+        </div>
+        <div class="wrapveggies">
+          <img id="chicken" class="object absolute h-2/5 w-[17%] -top-[10%] -left-[5%]" data-value="3"
+            src="/images/chicken.png" alt="chicken" />
+          <img id="wrapcapsicum" class="object absolute h-[30%] w-[8%] top-1/4 left-[5%] -rotate-[120 deg]"
+            data-value="2" src="/images/capsicum2.png" alt="capsicum2" />
+          <img id="wraponion1" class="object absolute h-1/5 w-[12%] bottom-[12%] right-[15%] -rotate-[25 deg]"
+            data-value="-3" src="/images/onion1.png" alt="onion1" />
+          <img id="wraponion4" class="object absolute h-2/5 w-1/5 -bottom-[10%] -right-[5%] rotate-[20 deg]"
+            data-value="-4" src="/images/onion4.png" alt="onion4" />
+          <img id="tomatoleft" class="object absolute h-[30%] w-[15%] bottom-[20%] left-[10%] rotate-[50 deg]"
+            data-value="2" src="/images/tomato2.png" alt="tomato2" />
+          <img id="tomatoright" class="object absolute h-[30%] w-[15%] top-[35%] right-[5%]" data-value="-2"
+            src="/images/tomato2.png" alt="tomato2" />
+          <img id="cabbagetop" class="object absolute h-[30%] w-[15%] -top-[10%] right-[2%] rotate-[25 deg]"
+            data-value="-5" src="/images/cabbage.png" alt="cabbage" />
+          <img id="cabbageright" class="object absolute h-1/5 w-[10%] top-0 right-0 rotate-[70 deg]" data-value="-4"
+            src="/images/cabbage.png" alt="cabbage" />
+          <img id="cabbageleft" class="object absolute h-[30%] w-[15%] -bottom-[5%] left-0 rotate-[40 deg]"
+            data-value="5" src="/images/cabbage.png" alt="cabbage" />
+        </div>
+        <div id="wraparrows">
+          <img class="absolute h-[10%] w-[10%] top-[55%] right-[30%] wraparrowtopright" src="/images/arrow1.svg"
+            alt="arrow" />
+          <img class="absolute h-[8%] w-[8%] bottom-[17%] left-[35%] wraparrowbottomleft" src="/images/arrow3.svg"
+            alt="arrow" />
+          <img class="absolute h-[18%] w-[20%] bottom-[14%] right-[27%] wraparrowbottomright" src="/images/arrow4.svg"
+            alt="arrow" />
+          <img class="absolute h-[18%] w-[20%] top-[50%] left-[30%] wraparrowtopleft" src="/images/arrow2.svg"
+            alt="arrow" />
+        </div>
+        <img class="absolute h-[10%] w-[12%] top-[55%] left-[27%] wholegrains" src="/images/Whole grains.svg"
+          alt="wholegrains" />
+        <img class="absolute h-[8%] w-[11%] top-[53%] right-[22%] filling" src="/images/Filling.svg" alt="filling" />
+        <img class="absolute h-[8%] w-[11%] top-[70%] left-[27%] customizable" src="/images/Customizable.svg"
+          alt="customizable" />
+        <img class="absolute h-[12%] w-[11%] top-[68%] right-[26%] leanproteins" src="/images/Lean Proteins.svg"
+          alt="leanproteins" />
+      </div>
+      <!-- cookie slide -->
+      <div class="item swiper-slide h-screen w-screen bg-[#FFC700] relative overflow-x-hidden overflow-y-hidden"
+        id="page3">
+        <div class="mobile-nav">
+          <img class="logo-mobile" id="subwaylogo-mobile" src="/images/subwaylogo1.png" alt="subway logo" />
+          <div class="menu">
+            <div class="item">
+              <a href="#" class="link">
+                <span
+                  class="text-[#fff] text-2xl font-extrabold transition-all  duration-500 ease-in-out hover:text-[#021D09]"><i
+                    class="ri-menu-line"></i></span>
+              </a>
+              <div class="submenu">
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link"> FAQ </a>
+                </div>
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link">OUR STORY</a>
+                </div>
+                <div class="submenu-item">
+                  <a href="#" class="submenu-link">TALK TO US </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subtext">
+          <img class="logo" src="/images/subwaylogo1.png" alt="subway logo" />
+          <h1>FRESHNESS SERVED DAILY</h1>
+          <h2>Perfectly baked delights to sweeten moments</h2>
+          <img class="cookies w-[70%] absolute left-[22%] top-[45%] z-[99]" src="/images/cookie3.png" alt="cookies" />
+          <img class="cookie-img-mobile" src="/images/cookie-img-mobile.png" alt="">
+        </div>
+        <div id="cookieitems">
+          <img id="cookietop" class="object absolute h-1/2 -top-[10%] -left-[10%] rotate-[25 deg]"
+            src="/images/cookie1.png" data-value="1" alt="cookie" />
+          <img id="cookieright" class="object absolute h-2/5 -bottom-[10%] -right-[5%] -rotate-[130 deg]"
+            src="/images/cookie2.png" data-value="-3" alt="cookie2" />
+          <img id="chocochiptopright" class="object absolute h-1/2 -top-[2%] right-0" src="/images/chocochip1.svg"
+            data-value="-2" alt="chocochip1" />
+          <img id="chocochipright" class="object absolute h-full -bottom-[15%] -right-[5%] rotate-[20 deg]"
+            src="/images/chocochip2.svg" data-value="-1" alt="chocochip2" />
+          <img id="chocochipbottomleft" class="object absolute h-4/5 -bottom-[10%] left-0" src="/images/chocochip3.svg"
+            data-value="2" alt="chocochip3" />
+          <img id="chocochipleft" class="object absolute h-2/5 bottom-0 left-[5%] " src="/images/chocochip4.svg"
+            data-value="3" alt="chocochip4" />
+        </div>
+        <div id="cookiearrows">
+          <img class="absolute h-[10%] top-1/2 right-[39%] cookiearrowtopright" src="/images/arrow1.svg" alt="arrow" />
+          <img class="absolute h-[8%] bottom-[20%] left-[30%] cookiearrowbottomleft" src="/images/arrow3.svg"
+            alt="arrow" />
+          <img class="absolute h-[18%] bottom-[25%] right-[35%] cookiearrowbottomright" src="/images/arrow4.svg"
+            alt="arrow" />
+          <img class="absolute h-[18%] top-1/2 left-[30%] cookiearrowtopleft" src="/images/arrow2.svg" alt="arrow" />
+        </div>
+        <img class="absolute h-[5%] top-[55%] left-1/4 buttery" src="/images/Buttery.svg" alt="buttery" />
+        <img class="absolute h-[10%] top-1/2 right-[33%] freshlybaked" src="/images/Freshly Baked.svg"
+          alt="freshlybaked" />
+        <img class="absolute h-[8%] top-[67%] left-[25%] delicious" src="/images/Delicious.svg" alt="delicious" />
+        <img class="absolute h-[12%] top-[65%] right-[27%] qualityingrediants" src="/images/Quality Ingrediants.svg"
+          alt="qualityingrediants" />
+      </div>
+    </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- SCROLL REVEAL TEXT -->
+  <section class="scroll-reveal">
+    <p>
+      <span>
+        On an average our stores handle roughly about
+        2 orders every minute! From crispy vegetables
+        to tender meat, Subway has you covered with
+        quality, flavor, and convenience. So why wait?
+        indulge in a flavorful meal that's made just the
+        way you like it!
+      </span>
+    </p>
+  </section>
+
+  <!-- Discover -->
+  <section class="bg-[#FFF0E0] relative z-[-1]">
+
+    <div class="carousel">
+      <div class="list">
+        <div class="item">
+          <img src="images/img1.png">
+          <div class="introduce">
+            <div class="title">DISCOVER OUR
+              <br> <br>
+              <br>SIGNATURE SUBS
+            </div>
+            <div class="topic">Chilli Cheese</div>
+            <div class="des">
+              Multigrain, 3-cheese toasted sub with herby aloo patty, jalapeño, onion & capsicum with chilli mayo.
+            </div>
+            <div class="seeMore mt-6 mb-4">
+              <button class="c-button c-button--gooey">SEE MORE
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                      result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="title">Chilli Cheese</div>
+            <div class="des">
+              Multigrain, 3-cheese toasted sub with herby aloo patty, jalapeño, onion & capsicum with chilli mayo.
+              <br>
+              <br>
+              Allergens -
+              <br>
+              Contains wheat, rye, barley, oats, milk & soy.
+            </div>
+            <div class="specifications">
+              <div>
+                <p>Calories</p>
+                <p>284 g/ 678 kcal.</p>
+              </div>
+              <div>
+                <p>Veg/
+                  Non-Veg</p>
+                <p>Veg</p>
+              </div>
+            </div>
+            <br>
+            <div class="checkout">
+              <h5 class="checkouttext">Start Grilling it on</h5>
+
+              <div class="zomato mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.zomato.com/">Zomato</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiggy mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.swiggy.com/">SWIGGY</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="item">
+          <img src="images/img2.png">
+          <div class="introduce">
+            <div class="title">DISCOVER OUR
+              <br>SIGNATURE SUBS
+            </div>
+            <div class="topic">Paneer Achari</div>
+            <div class="des">
+              Multigrain toasted sub with chunks of paneer, achari mayo, pickled onion, capsicum, tomato and chilli
+              mayo.
+            </div>
+            <div class="seeMore mt-6 mb-4">
+              <button class="c-button c-button--gooey">SEE MORE
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                      result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="title">Paneer Achari</div>
+            <div class="des">
+              Multigrain toasted sub with chunks of paneer, achari mayo, pickled onion, capsicum, tomato and chilli
+              mayo.
+              <br>
+              <br>
+              Allergens -
+              <br>
+              Contains wheat, rye, barley, oats, milk & soy.
+            </div>
+            <div class="specifications ">
+              <div>
+                <p>Calories</p>
+                <p>240 g/ 589 kcal</p>
+              </div>
+              <div>
+                <p>Veg/
+                  Non-Veg</p>
+                <p>Veg</p>
+              </div>
+            </div>
+            <br>
+            <div class="checkout">
+              <h5 class="checkouttext">Start Grilling it on</h5>
+
+              <div class="zomato mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.zomato.com/">Zomato</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiggy mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.swiggy.com/">SWIGGY</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/img1.png">
+          <div class="introduce">
+            <div class="title">DISCOVER OUR
+              <br>SIGNATURE SUBS
+            </div>
+            <div class="topic">Crunchy Mexican</div>
+            <div class="des">
+              Multigrain toasted sub with Mexican bean patty, tomato, capsicum, onion, olives, jalapeño, southwest
+              chipotle sauce & crunchy nachos.
+            </div>
+            <div class="seeMore mt-6 mb-4">
+              <button class="c-button c-button--gooey">SEE MORE
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                      result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="title">Crunchy Mexican</div>
+            <div class="des">
+              Multigrain toasted sub with Mexican bean patty, tomato, capsicum, onion, olives, jalapeño, southwest
+              chipotle sauce & crunchy nachos.
+              <br>
+              <br>
+              Allergens -
+              <br>
+              Contains wheat, rye, barley, oats, milk & soy.
+            </div>
+            <div class="specifications">
+              <div>
+                <p>Calories</p>
+                <p>295 g/ 702 kcal</p>
+              </div>
+              <div>
+                <p>Veg/
+                  Non-Veg</p>
+                <p>Veg</p>
+              </div>
+            </div>
+            <br>
+            <div class="checkout">
+              <h5 class="checkouttext">Start Grilling it on</h5>
+
+              <div class="zomato mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.zomato.com/">Zomato</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiggy mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.swiggy.com/">SWIGGY</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/img4.png">
+          <div class="introduce">
+            <div class="title">DISCOVER OUR
+              <br>SIGNATURE SUBS
+            </div>
+            <div class="topic">Chicken Tikka Achari</div>
+            <div class="des">
+              Multigrain toasted sub with Tandoori Chicken, achari mayo, pickled onion, capsicum and tomato, topped with
+              chilli mayo for an extra kick.
+            </div>
+            <div class="seeMore mt-6 mb-4">
+              <button class="c-button c-button--gooey">SEE MORE
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                      result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="title">Chicken Tikka Achari</div>
+            <div class="des">
+              Multigrain toasted sub with Tandoori Chicken, achari mayo, pickled onion, capsicum and tomato, topped with
+              chilli mayo for an extra kick.
+              <br>
+              <br>
+              <div class="allergens">
+                Allergens -
+                <br>
+                Contains wheat, rye, barley, oats, milk & soy.
+              </div>
+            </div>
+            <div class="specifications">
+              <div>
+                <p>Calories</p>
+                <p>240 g/ 520 kcal</p>
+              </div>
+              <div>
+                <p>Veg/
+                  Non-Veg</p>
+                <p>Non-Veg</p>
+              </div>
+            </div>
+            <br>
+            <div class="checkout">
+              <h5 class="checkouttext">Start Grilling it on</h5>
+
+              <div class="zomato mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.zomato.com/">Zomato</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiggy mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.swiggy.com/">SWIGGY</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/img5.png">
+          <div class="introduce">
+            <div class="title">DISCOVER OUR
+              <br>SIGNATURE SUBS
+            </div>
+            <div class="topic">Pepper Chicken with Dip</div>
+            <div class="des">
+              A flavourful toasted sub loaded with capsicum, olives & jalapeños. This warm sandwich has juicy black
+              pepper chicken paired with creamy Italian sauce and white Italian bread as the base.
+            </div>
+            <div class="seeMore mt-6 mb-4">
+              <button class="c-button c-button--gooey">SEE MORE
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                      result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="title">Pepper Chicken with Dip</div>
+            <div class="des">
+              A flavourful toasted sub loaded with capsicum, olives & jalapeños. This warm sandwich has juicy black
+              pepper chicken paired with creamy Italian sauce and white Italian bread as the base.
+              <br>
+              <br>
+              Allergens -
+              <br>
+              Contains wheat, rye, barley, oats, milk & soy.
+            </div>
+            <div class="specifications">
+              <div>
+                <p>Calories</p>
+                <p>189 g/ 359 kcal</p>
+              </div>
+              <div>
+                <p>Veg/
+                  Non-Veg</p>
+                <p>Non-Veg</p>
+              </div>
+            </div>
+            <br>
+            <div class="checkout">
+              <h5 class="checkouttext">Start Grilling it on</h5>
+
+              <div class="zomato mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.zomato.com/">Zomato</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiggy mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.swiggy.com/">SWIGGY</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/img6.png">
+          <div class="introduce">
+            <div class="title">DISCOVER OUR
+              <br>SIGNATURE SUBS
+            </div>
+            <div class="topic">Great American BBQ</div>
+            <div class="des">
+              Multigrain toasted sub with chicken pepperoni, chicken slice, smoked chicken strips, onion, pickle,
+              capsicum, eggless mayo and barbecue sauce. </div>
+            <div class="seeMore mt-6 mb-4">
+              <button class="c-button c-button--gooey">SEE MORE
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                      result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="title">Great American BBQ</div>
+            <div class="des">
+              Multigrain toasted sub with chicken pepperoni, chicken slice, smoked chicken strips, onion, pickle,
+              capsicum, eggless mayo and barbecue sauce. <br>
+              <br>
+              Allergens -
+              <br>
+              Contains wheat, rye, barley, oats, milk & soy.
+            </div>
+            <div class="specifications">
+              <div>
+                <p>Calories</p>
+                <p>253 g/ 539 kcal</p>
+              </div>
+              <div>
+                <p>Veg/
+                  Non-Veg</p>
+                <p>Non-Veg</p>
+              </div>
+            </div>
+            <br>
+            <div class="checkout">
+              <h5 class="checkouttext">Start Grilling it on</h5>
+
+              <div class="zomato mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.zomato.com/">Zomato</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiggy mt-6 mb-4">
+                <button class="c-button c-button--gooey"><a href="https://www.swiggy.com/">SWIGGY</a>
+                  <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+
+        <button id="prev">
+          <</button>
+            <button id="next">></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BEYOND OUR SUBS -->
+  <section class="beyond-our-subs">
+    <img src="images/Group 17.svg" alt="beyond">
+    <div class="scoped-background-rectangle">
+      <div class="scoped-container">
+        <div class="scoped-tabs scoped-left">
+          <div class="scoped-tab" data-image="images/salad-removebg-preview.png">SALADS</div>
+          <div class="scoped-tab" data-image="images/nacho-removebg-preview.png">NACHOS</div>
+          <div class="scoped-tab" data-image="images/oat-removebg-preview.png">OATMEAL RAISIN</div>
+          <div class="scoped-tab" data-image="images/toastie-removebg-preview.png">VEGGIE TOASTIE</div>
+        </div>
+        <div class="scoped-image-container">
+          <img src="images/subway wrap.png" alt="" id="scoped-dish-image">
+        </div>
+        <div class="scoped-tabs scoped-right">
+          <div class="scoped-tab" data-image="images/subwaywrap.png">WRAPS</div>
+          <div class="scoped-tab" data-image="images/vegkebabs.png">VEG KEBABS</div>
+          <div class="scoped-tab" data-image="images/double_chunk-removebg-preview.png">DARK CHUNK CHOCOLATE</div>
+          <div class="scoped-tab" data-image="images/meatball-subs2-removebg-preview (1).png">CHICKEN MEATBALLS</div>
+        </div>
+      </div>
+      <div class="scoped-extra-space"></div>
+      <div class="scoped-additional-tab">
+        <div class="scoped-tab" data-image="images/double_chunk-removebg-preview.png">DOUBLE DARK CHUNK CHOCOLATE</div>
+      </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <div class="faqs-container">
+    <!-- <img src="FAQ.svg" alt=""> -->
+    <h3>
+      F <span>A</span> Q
+    </h3>
+    <div class="FAQ"></div>
+
+    <details open name="faq">
+
+      <summary>
+
+        Are the vegetarian and non vegetarian orders prepared seperately?
+
+      </summary>
+
+      <p class="content">
+        Subway restaurants have policies in place to reduce the risk of cross-contamination between vegetarian and
+        non-vegetarian orders.
+        Using separate knives and cutting boards for vegetarian sandwiches to prevent cross-contamination.
+        Some locations might have separate sections in the food preparation area for vegetarian and non-vegetarian
+        ingredients.
+        Training staff to handle vegetarian and non-vegetarian items separately and follow proper hygiene practices.
+      </p>
+
+    </details>
+
+
+    <details name="faq">
+
+      <summary>
+        Are the bread options suitable for vegetarians ?</summary>
+
+      <p class="content">
+        Yes, most of the bread options at Subway are suitable for vegetarians. Here are some common bread options
+        typically available at Subway that are generally vegetarian-friendly
+        However, it's always good to check for any updates or changes in ingredients, as recipes can vary by location
+        and over time. Additionally, some specialty or seasonal breads might contain non-vegetarian ingredients. If you
+        have any doubts, ask the staff at your specific Subway location for ingredient details to ensure the bread meets
+        your dietary requirements.
+      </p>
+
+    </details>
+
+
+    <details name="faq">
+
+      <summary>
+        Can I customize my sandwich with specific vegetables and sauces?</summary>
+
+      <p class="content">
+        Yes, at Subway, you can fully customize your sandwich by choosing specific vegetables and sauces. Here's how you
+        can typically customize your sandwich:
+        You can mix and match these vegetables and sauces to create a sandwich that suits your taste preferences. If you
+        have any dietary restrictions or preferences, be sure to inform the staff so they can assist you in making
+        choices that fit your needs.
+
+      </p>
+
+    </details>
+
+
+    <details name="faq">
+
+      <summary>
+        What are the calorie counts for your menu items?</summary>
+
+      <p class="content">
+        Subway offers a wide range of menu items, and the calorie counts can vary significantly depending on the
+        ingredients and portion sizes. For the most accurate and detailed nutritional
+        information, including calories for additional toppings, sides, and beverages, you can ask for a nutritional
+        guide at your local Subway restaurant.
+
+      </p>
+
+    </details>
+
+
+    <details name="faq">
+
+      <summary>
+        Can I order online through your website or mobile app?</summary>
+
+      <p class="content">
+        Yes, you can order online through Subway's website or mobile app. Ordering online through the website or app
+        allows you to customize your sandwich, save your favorite orders for future convenience, and often access
+        exclusive deals and promotions.
+      </p>
+
+    </details>
+
+
+    <details name="faq">
+
+      <summary>
+        How often do you need to do maintenance ?</summary>
+
+      <p class="content">
+        This is dependent on the water source and your usage .Changes in the water source might disrupt your maintenance
+        schedule .Hydra offers free first year maintenance service every 3 months so as to gauge the working of the
+        systems in your space and advise on the best maintenance schedule that will give you optimum functioning of the
+        system .The schedules may range from every 5 months to every 3 years.
+      </p>
+
+    </details>
+
+  </div>
+
+
+  <!-- Journey -->
+
+
+
+  <!-- CREATE YOUR OWN SUB -->
+  <section id="section5">
+    <div class="section5heading flex justify-start">
+      <h1 class="text-[8vw] text-left font-black text-white tracking-[0.55rem] leading-tight">CREATE YOUR <br>OWN <span
+          class="italic text-[#FFC700]">SUB</span></h1>
+    </div>
+    <!-- <div class="spacer"></div> -->
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="left">
+        <div class="desktopContent">
+          <div class="desktopContentSection">
+            <h1 class="text-2xl font-extrabold text-[#FFC700] mt-2 mb-2">STEP 1 </h1>
+            <h2 class="text-6xl font-black text-[#0B8F2C] tracking-tighter mb-2">Choose Your Bread</h2>
+            <p class="text-2xl text-[#03260c] font-medium font-[Georama] mb-7">Select from a variety of fresh breads.
+            </p>
+            <p class="text-2xl italic text-[#054315] font-light font-[Georama]">"Life is like a sandwich, the bread
+              comes first."</p>
+          </div>
+          <div class="desktopContentSection">
+            <h1 class="text-2xl font-extrabold text-[#FFC700] mt-2 mb-2">STEP-2 </h1>
+            <h2 class="text-6xl font-black text-[#0B8F2C] tracking-tighter mb-2">Pick Your Protein</h2>
+            <p class="text-2xl text-[#03260c] font-medium font-[Georama] mb-7">Load up with your choice of meats such as
+              chicken, or veggie patty.</p>
+            <p class="text-2xl italic text-[#054315] font-light font-[Georama]">"Protein-powered to keep you going
+              strong!"</p>
+          </div>
+          <div class="desktopContentSection">
+            <h1 class="text-2xl font-extrabold text-[#FFC700] mt-2 mb-2">STEP-3 </h1>
+            <h2 class="text-6xl font-black text-[#0B8F2C] tracking-tighter mb-2">Pile on the Veggies</h2>
+            <p class="text-2xl text-[#03260c] font-medium font-[Georama] mb-7">Fresh veggies like lettuce, tomatoes,
+              cucumbers, and more are at your fingertips.</p>
+            <p class="text-2xl italic text-[#054315] font-light font-[Georama]">"Veggies are the colors of flavor."</p>
+          </div>
+          <div class="desktopContentSection">
+            <h1 class="text-2xl font-extrabold text-[#FFC700] mt-2 mb-2">STEP-4 </h1>
+            <h2 class="text-6xl font-black text-[#0B8F2C] tracking-tighter mb-2">Select Your Sauce</h2>
+            <p class="text-2xl text-[#03260c] font-medium font-[Georama] mb-7">Finish off with your favorite sauce—Mayo,
+              BBQ, Sweet Onion, or Honey Mustard.</p>
+            <p class="text-2xl italic text-[#054315] font-light font-[Georama]">"Sauce it up to spice it up!"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+
+        <!-- mobile content -->
+        <div class="mobileContent">
+          <div class="mobilePhoto step1">
+            <img src="images/bread.png" alt="">
+          </div>
+          <h1 class="text-xl font-extrabold text-[#FFC700e2] mt-2 mb-2">STEP 1 </h1>
+          <h2 class="text-3xl font-black text-[#0B8F2C] tracking-tighter mb-2">Choose Your Bread</h2>
+          <p class="text-xl text-[#03260c] font-medium font-[Georama] mb-2">Select from a variety of fresh breads</p>
+          <p class="text-xl italic text-[#054315] font-light font-[Georama]">"Life is like a sandwich, the bread comes
+            first."</p>
+
+          <div class="mobilePhoto step2">
+            <img src="images/patty.png" alt="">
+          </div>
+          <h1 class="text-xl font-extrabold text-[#FFC700e2] mt-2 mb-2">STEP-2 </h1>
+          <h2 class="text-3xl font-black text-[#0B8F2C] tracking-tighter mb-2">Pick Your Protein</h2>
+          <p class="text-xl text-[#03260c] font-medium font-[Georama] mb-2">Load up with your choice of meats such as
+            chicken, or veggie patty.</p>
+          <p class="text-xl italic text-[#054315] font-light font-[Georama]">"Protein-powered to keep you going strong!"
+          </p>
+
+          <div class="mobilePhoto step3">
+            <img src="images/vegetables.png" alt="">
+          </div>
+          <h1 class="text-xl font-extrabold text-[#FFC700e2] mt-2 mb-2">STEP-3 </h1>
+          <h2 class="text-3xl font-black text-[#0B8F2C] tracking-tighter mb-2">Pile on the Veggies</h2>
+          <p class="text-xl text-[#03260c] font-medium font-[Georama] mb-2">Fresh veggies like lettuce, tomatoes,
+            cucumbers, and more are at your fingertips.</p>
+          <p class="text-xl italic text-[#054315] font-light font-[Georama]">"Veggies are the colors of flavor."</p>
+
+
+          <div class="mobilePhoto step4">
+            <img src="images/sauce.png" alt="">
+          </div>
+          <h1 class="text-xl font-extrabold text-[#FFC700e2] mt-2 mb-2">STEP-4 </h1>
+          <h2 class="text-3xl font-black text-[#0B8F2C] tracking-tighter mb-2">Select Your Sauce</h2>
+          <p class="text-xl text-[#03260c] font-medium font-[Georama] mb-2">Finish off with your favorite sauce—Mayo,
+            BBQ, Sweet Onion, or Honey Mustard.</p>
+          <p class="text-xl italic text-[#054315] font-light font-[Georama] mb-7">"Sauce it up to spice it up!"</p>
+
+        </div>
+        <!-- desktop content -->
+
+        <div class="desktopPhotos">
+          <div class="desktopPhoto step1">
+            <img src="images/bread.png" alt="">
+          </div>
+          <div class="desktopPhoto step2">
+            <img src="images/patty.png" alt="">
+          </div>
+          <div class="desktopPhoto step3">
+            <img src="images/vegetables.png" alt="">
+          </div>
+          <div class="desktopPhoto step4">
+            <img src="images/sauce.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer px-10 py-14 text-center ">
+      <h1 class="lg:text-3xl sm:text-2xl font-medium text-white tracking-tight">Enjoy Your Perfectly Crafted Sub! </h1>
+      <h2 class="lg:text-5xl sm:text-4xl font-black text-white leading-loose"><span
+          class="text-[#FFC800]">Sub</span>way: <span class="italic font-extrabold">Where every bite is a
+          delight.</span></h2>
+    </div>
+  </section>
+
+
+  <!-- locate our stores -->
+  <div class="container swiper-slide">
+    <div class="info">
+      <div class="logo">
+        <img src="/images/subway.svg" alt="subway logo">
+      </div>
+      <h1>SPOT OUR STORES!</h1>
+      <h2>Craving adventure?</h2>
+      <p>Discover your local <span class="yellowsubwaytext">Sub</span>way and indulge in our mouthwatering creations!
+        Pin us on your map and roll in.<br><br>Want to find your flavours and fuel your fun? <span
+          class="yellowsubwaytext">Sub</span>way's the destination!</p>
+      <p id="order">Order Now On</p>
+      <div class="order-buttons">
+        <button class="swiggy"><a href="https://www.swiggy.com">Swiggy</a></button>
+        <button class="zomato"><a href="https://www.zomato.com">Zomato</a></button>
+      </div>
+    </div>
+    <div class="image-container">
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1sYGamlKrMFr_LTubx70Nc0AJtm1ZDVA&ehbc=2E312F&noprof=1"></iframe>
+    </div>
+  </div>
+
+  <!-- TALK TO US -->
+  <section id="section11">
+    <div id="curvedDiv" class="section11main h-[90vh] bg-[#FFF0E0]">
+      <div class="scroll">
+        <div class="imgbox">
+          <img class="h-[17rem]" src="images/sub1.jpeg">
+          <img class="h-[8.6rem]" src="images/sub5.jpeg">
+          <img class="h-52" src="images/sub6.jpeg">
+          <img class="h-52" src="images/sub3.jpeg">
+          <img class="h-52" src="images/sub7.jpeg">
+          <img class="h-52" src="images/sub4.jpeg">
+          <img class="h-[22rem]" src="images/sub8.jpeg">
+          <img class="h-52" src="images/sub9.jpeg">
+          <img class="h-52" src="images/sub2.jpeg">
+        </div>
+        <div class="imgbox">
+          <img class="h-[17rem]" src="images/sub1.jpeg">
+          <img class="h-[8.6rem]" src="images/sub5.jpeg">
+          <img class="h-52" src="images/sub6.jpeg">
+          <img class="h-52" src="images/sub3.jpeg">
+          <img class="h-52" src="images/sub7.jpeg">
+          <img class="h-52" src="images/sub4.jpeg">
+          <img class="h-[22rem]" src="images/sub8.jpeg">
+          <img class="h-52" src="images/sub9.jpeg">
+          <img class="h-52" src="images/sub2.jpeg">
+        </div>
+      </div>
+      <div class="talktous h-full w-1/2 px-16 pb-5 absolute right-0 ">
+        <form class="form ">
+          <p id="heading">TALK TO US !</p>
+          <div class="field">
+            <input autocomplete="off" placeholder="Name" class="input-field" type="text">
+          </div>
+          <div class="field">
+            <input placeholder="Mobile No." class="input-field" type="number">
+          </div>
+          <div class="field">
+            <input placeholder="Email Id" class="input-field" type="email">
+          </div>
+          <h6 class="text-xs font-semibold text-[#0B8F2C]">Do you have your last order details:</h6>
+          <div class="radio-buttons-container">
+            <div class="radio-button">
+              <input name="radio-group" id="radio1" class="radio-button__input" type="radio">
+              <label for="radio1" class="radio-button__label">
+                <span class="radio-button__custom"></span>
+
+                Yes
+              </label>
+            </div>
+            <div class="radio-button">
+              <input name="radio-group" id="radio2" class="radio-button__input" type="radio">
+              <label for="radio2" class="radio-button__label">
+                <span class="radio-button__custom"></span>
+
+                No
+              </label>
+            </div>
+          </div>
+          <div class="flex items-center justify-between attachment">
+            <h6 class="text-base font-semibold text-[#0B8F2C]">Attachment ,if any</h6>
+            <button type="button" class="button">
+              <span class="button__text">Add Item</span>
+              <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
+                  stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24"
+                  fill="none" class="svg">
+                  <line y2="19" y1="5" x2="12" x1="12"></line>
+                  <line y2="12" y1="12" x2="19" x1="5"></line>
+                </svg></span>
+            </button>
+          </div>
+          <div class="promotioncheckbox mt-1">
+            <label class="material-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              I agree to receive communication on newsletters, promotional content, offers and events through
+              SMS, RCS, WhatsApp.
+            </label>
+          </div>
+          <div class="submit mt-1 mb-4">
+            <button class="c-button c-button--gooey">Submit
+              <div class="c-button__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    result="goo"></feColorMatrix>
+                  <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="lg:h-[40vh] sm:h-[35vh] lg:p-10 sm:p-10 relative">
+      <div
+        class="footertext h-full  lg:px-10 sm:px-0 sm:mt-[10px] flex items-center gap-10 border-b-2 border-b-[#032B0D]">
+        <div class="h-full w-1/3 flex flex-col gap-2">
+          <a href="#" class="text-xl font-extrabold text-[#F5C004]">Contact</a>
+          <a href="#" class="text-sm text-white ">Customer Care</a>
+          <a href="#" class="text-sm text-white ">Feedback</a>
+        </div>
+        <div class="h-full w-1/3  flex flex-col gap-2">
+          <a href="#" class="text-xl font-extrabold text-[#F5C004]">Subway Cares</a>
+          <a href="#" class="text-sm text-white ">Nutrition Information</a>
+        </div>
+        <div class="h-full w-1/3  flex flex-col gap-2">
+          <a href="#" class="text-xl font-extrabold text-[#F5C004]">Legal</a>
+          <a href="#" class="text-sm text-white ">Privacy Policy</a>
+          <a href="#" class="text-sm text-white ">Terms & Conditons</a>
+        </div>
+        <img class="h-16 absolute right-0 top-2" src="images/subwaylogo3.png" alt="">
+      </div>
+      <p class="p-2 text-xs text-white font-extralight">All rights reserved. SUBWAY® is a Registered Trademark of Subway
+        IP LLC. ©2022 Subway IP LLC., and is licensed to Eversub India Private Limited under an exclusive master
+        franchisee arrangement for the territory of the Republic of India.</p>
+    </div>
+  </footer>
+
+
+  <!-- Swiper JS -->
+  <script src="swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- PARALLAX MOUSEMOVE -->
+  <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+      document.querySelectorAll(".object").forEach(function (move) {
+
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 300;
+        var y = (e.clientY * moving_value) / 300;
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+      });
+    }
+  </script>
+  <!-- <script src="journey.js"></script> -->
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- link js file -->
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

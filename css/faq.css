@@ -1,0 +1,127 @@
+*{
+  font-family:system-ui; 
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 107, 27);
+  background-image:url(FAQ.svg) ;
+  background-size:cover;
+  /* background-position: center; */
+  /* overflow:scroll; */
+  /* background-repeat:no-repeat ; */
+
+}
+
+.faqs-container h3{
+  /* position: fixed; */
+  text-wrap:balance;
+  font-weight: 900;
+  font-size: 5rem;
+  text-decoration:underline;
+  text-underline-offset:6px;
+  text-decoration-thickness:1px;
+  margin-bottom:30px;
+  color: aliceblue;
+}
+span{
+  color: yellow;
+}
+
+/* .FAQ{
+  height: 10%;
+  width: 20%;
+  background-color: aqua;
+} */
+
+.faqs-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
+  height: 100%;
+}
+
+details {
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  background-color: rgb(255, 240, 224);
+  
+  /* padding: 0.5em 0.5em 0; */
+  padding: 0.7em;
+  margin-bottom:10px;
+  cursor:pointer;
+  width: 85%;
+}
+
+summary {
+  font-weight: 600;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  list-style-type:"+";
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+details[open] {
+  padding: 0.8em; 
+  border:none;
+  border-radius: 5px;
+  background-color:	 rgb(255,240,224,0.9);
+
+}
+
+summary::marker{
+  color: #0000ff;
+  font-size: 1.2em;
+  margin-right:20px;
+}
+
+details:hover{
+   background-color:	 rgba(6, 247, 98, 0.5);
+}
+
+details summary::after{
+  content:"+";
+  float:right;
+  font-size:1.2em;
+  color:rgb(255, 196, 0);
+}
+
+details[open] summary::after{
+  content:"-";
+  float:right;
+  font-size:1.5em;
+  color:rgb(255, 196, 0);
+  border-radius: 2px;
+}
+@media screen and (max-width: 599px) {
+  .faqs-container {
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+  }
+  details {
+    padding-left: 1.5em;
+    padding-right: 1em; 
+  }
+  details summary::after{
+    content:"+";
+    float:right;
+    font-size:2em;
+    color:rgb(255, 196, 0);
+  }
+  
+  details[open] summary::after{
+    content:"-";
+    float:right;
+    font-size:3em;
+    color:rgb(255, 196, 0);
+    border-radius: 2px;
+  }
+}

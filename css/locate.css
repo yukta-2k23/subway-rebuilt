@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    background-color: #e91010;
+    /* border-radius: 10px; */
+    /* border-top: 4px solid rgb(0, 0, 0); */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.info {
+    padding: 2%;
+    background-color: #0B8F2C;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.info .logo img {
+    width: 100px;
+    margin-bottom: 0;
+}
+
+.info h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0);
+}
+
+.info h2 {
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-bottom: 2px;
+    font-style: italic;
+    color:#032B0D;
+}
+
+.info p {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.yellowsubwaytext{ 
+    color:#FFC700;
+}
+#order {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #032B0D;
+    margin-bottom: 10px;
+}
+
+.order-buttons {
+
+    display: flex;
+    gap: 20px;
+}
+
+.order-buttons button {
+    background-color: #0d0f0d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.order-buttons .swiggy {
+    background-color: #ff6f00;
+}
+
+.order-buttons .zomato {
+    background-color: #dd1010;
+}
+
+.order-buttons button:hover {
+    transform: scale(1.1);
+}
+
+.order-buttons a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+
+.image-container {
+    width: 80%;
+    background-color: #178501;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+@media screen and (max-width: 599px) {
+    .container {
+        display: flex;
+        border: none;
+        border-radius: 0;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .info {
+        padding: 1%;
+        width: 100%;
+    }
+    
+    .info .logo img {
+        width: 100px;
+        margin-bottom: -30px;
+    }
+    
+    .info h1 {
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+    
+    .info h2 {
+        font-size: 1em;
+        margin-bottom: 2px;
+    }
+    
+    .info p {
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+    
+    #order {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .order-buttons button {
+        padding: 5px 10px;
+
+    }
+
+    .image-container {
+        width: 100%;
+        height: 100%;
+    }
+  }
